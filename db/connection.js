@@ -8,5 +8,7 @@ const db = new Sequelize('database', 'username', 'password', {
     logging: false
 })
 
+db.authenticate();
+
 //export
 module.exports = { db, DataTypes }
